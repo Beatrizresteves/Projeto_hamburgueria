@@ -82,9 +82,54 @@
       "nome": "js",
       "carne": "Alcatra",
       "pao": "Italiano Branco",
-      "opcionais": ["Salame", "Bacon"],
+      "opcionais": [
+        "Salame",
+        "Cebola roxa"
+      ],
+      "status": "Em produção",
+      "id": 2
+    },
+    {
+      "nome": "javascript",
+      "carne": "Veggie burger",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Salame"
+      ],
+      "status": "Finalizado",
+      "id": 3
+    },
+    {
+      "nome": "js",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon"
+      ],
       "status": "Solicitado",
-      "id": 1
+      "id": 4
+    },
+    {
+      "nome": "javascript",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 5
+    },
+    {
+      "nome": "Beatriz Ramalho Esteves",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 6
     }
   ]
 }

@@ -56,6 +56,7 @@
 </template>
 
 <script>
+import Message from "./Message";
 export default {
   name: "BurgerForm",
   data() {
@@ -67,6 +68,7 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
+      status: "Solicitado",
       msg: null,
     };
   },
@@ -94,15 +96,22 @@ export default {
         body: dataJson,
       });
       const res = await req.json();
-
-      // colocar uma msg no sistema
-
-      // limpar os campos
+      console.log(res);
+      this.msg = "Pedido realizado com sucesso!";
+      // clear message
+      setTimeout(() => (this.msg = ""), 3000);
+      // limpar campos
+      this.nome = "";
+      this.carne = "";
+      this.pao = "";
+      this.opcionais = [];
     },
   },
   mounted() {
-    //aqui eu digo que quando o componente for montado eu faço a chamada da função
     this.getIngredientes();
+  },
+  components: {
+    Message,
   },
 };
 </script>
